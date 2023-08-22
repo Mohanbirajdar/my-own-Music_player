@@ -21,7 +21,7 @@ next_img = tk.PhotoImage(file="next_img.png")
 
 def slct():
     label.config(text=listBox.get("anchor"))
-    mixer.music.load(rootpath + listBox.get("anchor"))
+    mixer.music.load(rootpath + "\\" + listBox.get("anchor"))
     mixer.music.play()
 def stop():
     mixer.music.stop()
